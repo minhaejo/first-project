@@ -1,0 +1,14 @@
+.main_slider_img {
+  width: 394px;
+  height: 297px;
+}
+li {
+  list-style: none;
+}
+.main_text {
+  text-align: center;
+}
+.main_item_box_container {
+  display: flex;
+  justify-content: center;
+}

@@ -7,21 +7,18 @@ import Main from "./Components/Main";
 // import { JsxElement } from "typescript";
 import About from "./Components/About";
 import ErrorPage from "./Components/ErrorPage";
+import Contents from "./Components/absorption/Contents";
 
 function App() {
   return (
     <div>
-      {/* <Header />
-      <Main /> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Header />}></Route>
+          <Route path="/" element={<Contents />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/main" element={<Main />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
       </Router>
-      {/* <Main /> */}
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.main_container_text {
+  text-align: center;
+}
+.main_container_text_container {
+  margin-top: 160px;
+}
+.main_container_paragragh_container {
+  text-align: center;
+  margin-top: 30px;
+}
+.main_container_paragragh_container > p {
+  font-size: 20px;
+  color: #8c8c8c;
+  text-decoration: none;
+}
+.main_slider_container {
+  display: flex;
+  justify-content: center;
+}
+
+.main_container_text {
+  font-size: 27px;
+  color: #363636;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main_item_slider_img {
+  width: 394px;
+  width: 297px;
+}
