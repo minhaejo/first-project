@@ -34,7 +34,7 @@ const Header = () => {
             <div className="header_button_container">
               <Link to="/about">
                 <button
-                  className="headr_button"
+                  className="header_button"
                   onClick={() => {
                     navigate("/about");
                   }}

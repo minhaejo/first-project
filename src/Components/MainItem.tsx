@@ -7,26 +7,27 @@ interface Props {
 }
 
 const MainItem: React.FC<Props> = ({ data }) => {
-  const { imgUrl, paragraph, representative } = data;
+  const { imgUrl, paragraph, representative, representativeName } = data;
 
-  console.log(imgUrl);
   return (
     <div className="main_item_container">
       <li className="main_item_box_container>">
-        <div>
-          <img className="main_slider_img" src={imgUrl} alt="" />
+        <img className="main_slider_img" src={imgUrl} alt="" />
+
+        <p className="main_text">
+          {paragraph.split("\n").map((line) => {
+            return (
+              <>
+                {line}
+                <br />
+              </>
+            );
+          })}
+        </p>
+        <div className="representative_name_container">
+          <strong>{representative}</strong>
+          <span>{representativeName}</span>
         </div>
-        {paragraph.split("\n").map((line) => {
-          return (
-            <p>
-              {line}
-              <br />
-            </p>
-          );
-        })}
-        <strong>
-          <span>{representative}</span>
-        </strong>
       </li>
     </div>
   );

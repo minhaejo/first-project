@@ -11,4 +11,24 @@ li {
 .main_item_box_container {
   display: flex;
   justify-content: center;
+  width: 429px;
+  height: 483px;
+}
+.main_item_container {
+  width: 429px;
+
+  text-align: center;
+  height: 483px;
+}
+.representative_name_container {
+  display: flex;
+  justify-content: center;
+}
+
+.representative_name {
+  text-align: center;
+}
+.main_slider_img:hover {
+  transform: scale(1.15);
+  transition: 0.25s;
 }
